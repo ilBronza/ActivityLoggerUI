@@ -1,0 +1,37 @@
+{
+    "name": "ilbronza/activityloggerui",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Davide Bronzini",
+            "email": "davide@sistema.srl",
+            "homepage": "https://sistema.srl"
+        }
+    ],
+    "homepage": "https://github.com/ilbronza/activityloggerui",
+    "keywords": ["Laravel", "ActivityLoggerUI"],
+    "require": {
+        "spatie/laravel-activitylog": "~3"
+    },
+    "autoload": {
+        "psr-4": {
+            "IlBronza\\ActivityLoggerUI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IlBronza\\ActivityLoggerUI\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IlBronza\\ActivityLoggerUI\\ActivityLoggerUIServiceProvider"
+            ],
+            "aliases": {
+                "ActivityLoggerUI": "IlBronza\\ActivityLoggerUI\\Facades\\ActivityLoggerUI"
+            }
+        }
+    }
+}
