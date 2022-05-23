@@ -12,7 +12,6 @@
     "homepage": "https://github.com/ilbronza/activityloggerui",
     "keywords": ["Laravel", "ActivityLoggerUI"],
     "require": {
-        "spatie/laravel-activitylog": "~3"
     },
     "autoload": {
         "psr-4": {
