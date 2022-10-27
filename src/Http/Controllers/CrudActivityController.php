@@ -88,7 +88,7 @@ class CrudActivityController extends CRUD
         // 'deleted',
         // 'archived',
         // 'reorder',
-        // 'stroreReorder'
+        // 'storeReorder'
     ];
 
     /**
