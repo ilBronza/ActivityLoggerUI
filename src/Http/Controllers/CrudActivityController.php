@@ -170,7 +170,7 @@ class CrudActivityController extends CRUD
         $classBasename = urldecode($classBasename);
 
         $this->modelInstance = $classBasename::find($primary);
-        mori($this->modelInstance->activities()->get());
+        dd("activityIndex" . json_encode($this->modelInstance->activities()->get()));
     }
 
     /**
@@ -180,18 +180,6 @@ class CrudActivityController extends CRUD
 
 
 
-     /**
-      * START CREATE PARAMETERS AND METHODS
-      **/
-
-    // public function beforeRenderCreate()
-    // {
-    //     $this->modelInstance->agent_id = session('agent')->getKey();
-    // }
-
-     /**
-      * STOP CREATE PARAMETERS AND METHODS
-      **/
 
 }
 
