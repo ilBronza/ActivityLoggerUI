@@ -7,5 +7,6 @@ Route::group([
 	],
 	function()
 	{
+		//areo qua
 		Route::get('{classBasename}/{primary}/index', 'CrudActivityController@activityIndex')->name('activities.index');
 	});
