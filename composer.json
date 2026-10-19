@@ -1,6 +1,6 @@
 {
     "name": "ilbronza/activityloggerui",
-    "description": ":package_description",
+    "description": "Read-only model activity history UI with CRUD extra-field support.",
     "license": "MIT",
     "authors": [
         {
@@ -10,8 +10,17 @@
         }
     ],
     "homepage": "https://github.com/ilbronza/activityloggerui",
-    "keywords": ["Laravel", "ActivityLoggerUI"],
+    "keywords": [
+        "Laravel",
+        "ActivityLoggerUI"
+    ],
     "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0 || ^12.0",
+        "illuminate/routing": "^11.0 || ^12.0",
+        "illuminate/validation": "^11.0 || ^12.0",
+        "illuminate/view": "^11.0 || ^12.0",
+        "spatie/laravel-activitylog": "^4.0"
     },
     "autoload": {
         "psr-4": {
@@ -32,5 +41,15 @@
                 "ActivityLoggerUI": "IlBronza\\ActivityLoggerUI\\Facades\\ActivityLoggerUI"
             }
         }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0 || ^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "suggest": {
+        "ilbronza/crud": "Enables automatic discovery of CRUD ExtraField casts."
+    },
+    "scripts": {
+        "test": "phpunit"
     }
 }

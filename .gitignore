@@ -1,1 +1,4 @@
 .DS_Store
+/vendor/
+/tests/.runtime/
+/.phpunit.cache/
