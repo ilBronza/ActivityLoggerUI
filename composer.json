@@ -16,11 +16,11 @@
     ],
     "require": {
         "php": "^8.2",
-        "illuminate/support": "^11.0 || ^12.0",
-        "illuminate/routing": "^11.0 || ^12.0",
-        "illuminate/validation": "^11.0 || ^12.0",
-        "illuminate/view": "^11.0 || ^12.0",
-        "spatie/laravel-activitylog": "^4.0"
+        "illuminate/support": ">=11.0",
+        "illuminate/routing": ">=11.0",
+        "illuminate/validation": ">=11.0",
+        "illuminate/view": ">=11.0",
+        "spatie/laravel-activitylog": ">=4.0"
     },
     "autoload": {
         "psr-4": {
@@ -43,8 +43,8 @@
         }
     },
     "require-dev": {
-        "orchestra/testbench": "^9.0 || ^10.0",
-        "phpunit/phpunit": "^11.0"
+        "orchestra/testbench": ">=9.0",
+        "phpunit/phpunit": ">=11.0"
     },
     "suggest": {
         "ilbronza/crud": "Enables automatic discovery of CRUD ExtraField casts."

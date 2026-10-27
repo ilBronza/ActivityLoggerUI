@@ -5,8 +5,12 @@ valori prima/dopo, autore, origine, filtri e paginazione sul database.
 La pagina funziona senza JavaScript o una compilazione frontend. Include italiano
 e inglese e può usare il layout dell'applicazione.
 
-Richiede PHP 8.2+, Laravel 11/12 e Spatie Activitylog 4 con le sue migrazioni già
-eseguite. Il package legge il model, la tabella e la connessione configurati in
+Richiede PHP 8.2+, Laravel e Spatie Activitylog con le sue migrazioni già
+eseguite; le versioni minime sono dichiarate in Composer.
+
+I vincoli Composer delle dipendenze Laravel e delle relative integrazioni indicano soltanto una versione minima, senza un limite sulle major successive. La scelta delle versioni concrete spetta all’applicazione ospite e al suo `composer.lock`; la compatibilità del codice va verificata con i test.
+
+Il package legge il model, la tabella e la connessione configurati in
 `activitylog`; non cambia il modo in cui vengono registrati gli eventi.
 Il supporto agli extraFields richiede il package CRUD presente nell'applicazione.
 
